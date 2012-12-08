@@ -1,0 +1,5 @@
+Start with 3 terminal
+
+1) execute $> bundle exec guard
+2) execute $> rails s
+3) execute $> sublime_text #{filename} & 	// use for run command
