@@ -1,4 +1,14 @@
-page 638 on 11.2.4
+Next step implement Follower notifications (Action Mailer)
+http://railscasts.com/episodes/206-action-mailer-in-rails-3
+Retrieve password
+http://railscasts.com/episodes/274-remember-me-reset-password
+Generate RSS feed
+http://railscasts.com/episodes/87-generating-rss-feeds
+Text search
+http://railscasts.com/episodes/37-simple-search-form
+
+--------------------------------------------------------
+For installation
 
 $ git clone https://github.com/karinmaths/sample_app
 

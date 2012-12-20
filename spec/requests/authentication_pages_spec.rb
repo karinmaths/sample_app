@@ -56,7 +56,10 @@ describe "Authentication" do
 				end
 
 				describe "after signing in" do
-					#
+					
+					# it "should render the desired protected page" do
+					# 	page.should have_selector('title', text: 'Edit user')
+					# end
 				end
 			end
 
@@ -87,6 +90,18 @@ describe "Authentication" do
 				describe "visiting the followers page" do
 					before { visit followers_user_path(user) }
 					# it { should have_selector('title', text: 'Sign in') }
+				end
+			end
+
+			describe "in the Relationships controller" do
+				describe "submitting to the create action" do
+					before { post relationships_path }
+					specify { response.should redirect_to(signin_path) }
+				end
+
+				describe "submitting to the destroy action" do
+					before { delete relationship_path(1) }
+					specify { response.should redirect_to(signin_path) }
 				end
 			end
 
